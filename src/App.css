@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+}
+.header {
+  height: 58px;
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+}
+
+.inner-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (min-width: 1120px) {
+  .inner-header {
+    width: 1120px;
+  }
+}
+@media (max-width: 1120px) {
+  .inner-header {
+    width: 100%;
+  }
+}
+.inner-right {
+  height: 58px !important;
+  display: flex;
+  flex-direction: row;
+}
+.inner-left {
+  height: 58px;
+}
+.profile-picture {
+  border-radius: 50%;
+  padding-top: 9px;
+}
+.logo {
+  padding-top: 9px;
+}
+
+.feed {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.feed-card {
+  margin-top: 30px;
+}
+@media (min-width: 1120px) {
+  .feed-card {
+    width: 1120px;
+  }
+}
+@media (max-width: 1120px) {
+  .feed-card {
+    width: 100%;
+  }
+}
+.card-author {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.rounded {
+  border-radius: 50%;
+}
+.feed-post-data {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'DM Sans';
+  color: #282f2d;
+}
+.shop-time {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 500;
+  color: #949796;
+}
+.shop {
+  color: #0000ee;
+}
+.feed-text {
+  font-size: 14px;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  color: #000000;
+  padding: 0 20px 20px 20px;
+}
+.feed-images {
+  background-color: #cace5d;
+}
+.single-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.multiple-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px 5px;
+}
+.total-like-comment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.like-comment {
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: 'DM Sans';
+  font-weight: 400;
+}
+.like-pic {
+  padding-top: 3px;
+}
+.row {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.comment {
+  padding-top: 3px;
+}
+.button-txt {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 7px;
+  color: #484e4c;
+  vertical-align: center;
+}
+.liked {
+  color: #0a66c2 !important;
+}
+.buttons {
+  width: 50%;
+}
+.buttonsContainer {
+  display: flex;
+  position: relative;
+}
