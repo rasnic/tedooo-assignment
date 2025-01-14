@@ -32,9 +32,11 @@ function App() {
 
   useEffect(() => {
     get(0).then((feed) => {
-      setFeedItems(feed?.data);
-      setHasMore(feed?.hasMore);
-      setLoading(false);
+      if (feed) {
+        setFeedItems(feed?.data);
+        setHasMore(feed?.hasMore);
+        setLoading(false);
+      }
     });
   }, []);
   useEffect(() => {
@@ -50,7 +52,7 @@ function App() {
     ) {
       setLoading(true);
       get(page.current + 1).then((feed) => {
-        setTimeout(() => {
+        if (feed) {
           setFeedItems(
             feedItems && feed?.data && [...feedItems, ...feed?.data]
           );
@@ -58,7 +60,7 @@ function App() {
           page.current += 1;
           console.log(page.current);
           setLoading(false);
-        }, 500);
+        }
       });
     }
   };
